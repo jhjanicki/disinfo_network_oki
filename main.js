@@ -26,8 +26,9 @@ let dimension = Math.min(width,height)
 
 let tooltip = floatingTooltip('gates_tooltip', 240, 10);
 
-let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.2,25]);
-let strokeOpacityScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.7,1]);
+let strokeWidthScale = d3.scaleLinear().domain([1,8936]).range([0.2,25]);
+// keep the same width as the main network
+let strokeOpacityScale = d3.scaleLinear().domain(d3.extent([1,8936])).range([0.7,1]);
 
 let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range([5,40]);
 
@@ -36,6 +37,13 @@ const leidenCats = Array.from({ length: 7 }, (_, i) => i + 1);
 let colorScale = d3.scaleOrdinal().domain(leidenCats).range(["#4269d0", "#efb118", "#ff725c", "#6cc5b0", "#5ca75b","#ef90b6","#9b66ea"]);
 let xScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.x)).range([0,width]);
 let yScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.y)).range([0,height]);
+
+let texture = textures
+        .lines()
+        .size(6)
+        .strokeWidth(3)
+        .stroke("#9b66ea")
+        .background("white");
 
 
 const drag = simulation => {
@@ -81,8 +89,7 @@ const svg = d3.select("#chart").append("svg")
     .style("font-size", "13")
     .append("g")
     // .attr("transform",`translate(-100,0)`)
-
-
+    svg.call(texture);
 
 const link = svg.append("g")
     .attr("fill", "none")
@@ -133,9 +140,9 @@ const node = svg.append("g")
     .selectAll("g")
     .data(nodes)
     .join("g")
-    .attr("fill", d => colorScale(d.Leiden))
+    .attr("fill", d => d.EngName==="Kazuhiro Haraguchi"?texture.url():colorScale(d.Leiden))
     .attr("stroke","black")
-    .attr("stroke-width",0.5)
+    .attr("stroke-width",d=>d.EngName==="Kazuhiro Haraguchi"?1.5:0.5)
     .call(drag(simulation));
 
 
