@@ -8,8 +8,10 @@ let nodes = [
     "Sum of Edge Weights": 2488,
     "EngName": "Akichka",
     "Leiden": 1,
-    "x": 131.06778,
-    "y": 107.89515
+    "Default-X": 131.06778,
+    "Default-Y": 107.89515,
+    "x": 164.90092,
+    "y": 9.5189495
   },
   {
     "ID": "@2018_apc",
@@ -20,32 +22,10 @@ let nodes = [
     "Sum of Edge Weights": 3824,
     "EngName": "Asia Press Club",
     "Leiden": 2,
-    "x": 61.87175,
-    "y": 56.468662
-  },
-  {
-    "ID": "@8vyie27rhxz49od",
-    "Centrality, Total-Degree": 1452,
-    "OutDeg": 252,
-    "Twitter Name": "祐佳Ⅱ",
-    "Twitter Followers": 681,
-    "Sum of Edge Weights": 252,
-    "EngName": "Yuka 2",
-    "Leiden": 2,
-    "x": 2.1798267,
-    "y": 49.33972
-  },
-  {
-    "ID": "@8ywgrulkqnzjbun",
-    "Centrality, Total-Degree": 1371,
-    "OutDeg": 982,
-    "Twitter Name": "姜一星 カンイルソン 강일성",
-    "Twitter Followers": 4147,
-    "Sum of Edge Weights": 982,
-    "EngName": "Kang Il-sung",
-    "Leiden": 2,
-    "x": -35.4633,
-    "y": -29.275503
+    "Default-X": 61.87175,
+    "Default-Y": 56.468662,
+    "x": 69.00351,
+    "y": -27.740246
   },
   {
     "ID": "@ais_of_dragoon",
@@ -56,20 +36,10 @@ let nodes = [
     "Sum of Edge Weights": 633,
     "EngName": "Code Alice",
     "Leiden": 1,
-    "x": 102.86061,
-    "y": 94.759895
-  },
-  {
-    "ID": "@caitoz",
-    "Centrality, Total-Degree": 1735,
-    "OutDeg": 1725,
-    "Twitter Name": "Caitlin Johnstone",
-    "Twitter Followers": 386879,
-    "Sum of Edge Weights": 1725,
-    "EngName": "Caitlin Johnstone",
-    "Leiden": 5,
-    "x": -37.545162,
-    "y": 184.90414
+    "Default-X": 102.86061,
+    "Default-Y": 94.759895,
+    "x": 123.28627,
+    "y": -11.942928
   },
   {
     "ID": "@chnconsul_osaka",
@@ -79,9 +49,11 @@ let nodes = [
     "Twitter Followers": 21819,
     "Sum of Edge Weights": 927,
     "EngName": "Chinese Consulate General in Osaka",
-    "Leiden": 3,
-    "x": -2.1787374,
-    "y": -89.441284
+    "Leiden": 2,
+    "Default-X": -2.1787374,
+    "Default-Y": -89.441284,
+    "x": -70.551445,
+    "y": -71.96829
   },
   {
     "ID": "@crijpn",
@@ -91,9 +63,11 @@ let nodes = [
     "Twitter Followers": 24620,
     "Sum of Edge Weights": 2078,
     "EngName": "China Radio International Japan",
-    "Leiden": 3,
-    "x": 58.052677,
-    "y": -86.53962
+    "Leiden": 2,
+    "Default-X": 58.052677,
+    "Default-Y": -86.53962,
+    "x": 9.827345,
+    "y": -131.56
   },
   {
     "ID": "@d9bf0nrdyrl21ba",
@@ -104,8 +78,10 @@ let nodes = [
     "Sum of Edge Weights": 3933,
     "EngName": "Yuka",
     "Leiden": 2,
-    "x": 39.71466,
-    "y": 20.42153
+    "Default-X": 39.71466,
+    "Default-Y": 20.42153,
+    "x": 43.653877,
+    "y": -33.277435
   },
   {
     "ID": "@drloupis",
@@ -115,21 +91,11 @@ let nodes = [
     "Twitter Followers": 1312778,
     "Sum of Edge Weights": 3052,
     "EngName": "Anastasia Maria Loupis",
-    "Leiden": 5,
-    "x": 16.904636,
-    "y": 166.54436
-  },
-  {
-    "ID": "@guts_1997",
-    "Centrality, Total-Degree": 3590,
-    "OutDeg": 3291,
-    "Twitter Name": "Chikawa",
-    "Twitter Followers": 1945,
-    "Sum of Edge Weights": 3291,
-    "EngName": "Chikawa",
-    "Leiden": 2,
-    "x": 55.2111,
-    "y": -37.517586
+    "Leiden": 6,
+    "Default-X": 16.904636,
+    "Default-Y": 166.54436,
+    "x": 45.830036,
+    "y": 105.22395
   },
   {
     "ID": "@himuro398",
@@ -139,9 +105,11 @@ let nodes = [
     "Twitter Followers": 112810,
     "Sum of Edge Weights": 1131,
     "EngName": "Himuro",
-    "Leiden": 1,
-    "x": 103.854576,
-    "y": 122.52997
+    "Leiden": 3,
+    "Default-X": 103.854576,
+    "Default-Y": 122.52997,
+    "x": 155.39566,
+    "y": -11.028483
   },
   {
     "ID": "@holms6",
@@ -151,9 +119,11 @@ let nodes = [
     "Twitter Followers": 21145,
     "Sum of Edge Weights": 1772,
     "EngName": "Holmes",
-    "Leiden": 5,
-    "x": 34.809513,
-    "y": 42.241375
+    "Leiden": 6,
+    "Default-X": 34.809513,
+    "Default-Y": 42.241375,
+    "x": 41.811623,
+    "y": -10.512297
   },
   {
     "ID": "@j_sato",
@@ -164,8 +134,10 @@ let nodes = [
     "Sum of Edge Weights": 1200,
     "EngName": "J Sato",
     "Leiden": 1,
-    "x": 72.16926,
-    "y": 120.61789
+    "Default-X": 72.16926,
+    "Default-Y": 120.61789,
+    "x": 108.940674,
+    "y": 53.946175
   },
   {
     "ID": "@jacksonhinklle",
@@ -175,9 +147,11 @@ let nodes = [
     "Twitter Followers": 2700015,
     "Sum of Edge Weights": 2025,
     "EngName": "Jackson Hinkle",
-    "Leiden": 6,
-    "x": 37.57934,
-    "y": 134.635
+    "Leiden": 4,
+    "Default-X": 37.57934,
+    "Default-Y": 134.635,
+    "x": 96.223305,
+    "y": 89.7454
   },
   {
     "ID": "@jucundioribus",
@@ -188,8 +162,10 @@ let nodes = [
     "Sum of Edge Weights": 887,
     "EngName": "Zenrinyuko",
     "Leiden": 1,
-    "x": 56.950333,
-    "y": 37.757088
+    "Default-X": 56.950333,
+    "Default-Y": 37.757088,
+    "x": 62.52076,
+    "y": 30.12583
   },
   {
     "ID": "@jupiter_russia",
@@ -200,8 +176,10 @@ let nodes = [
     "Sum of Edge Weights": 790,
     "EngName": "Jupiter Russia",
     "Leiden": 1,
-    "x": 102.554436,
-    "y": 30.4148
+    "Default-X": 102.554436,
+    "Default-Y": 30.4148,
+    "x": 139.88765,
+    "y": -31.537333
   },
   {
     "ID": "@kamazen4649",
@@ -212,8 +190,10 @@ let nodes = [
     "Sum of Edge Weights": 86,
     "EngName": "Yoshimitsu Kamata",
     "Leiden": 2,
-    "x": 140.63982,
-    "y": 7.7415476
+    "Default-X": 140.63982,
+    "Default-Y": 7.7415476,
+    "x": 61.48901,
+    "y": -85.585594
   },
   {
     "ID": "@kanthan2030",
@@ -223,9 +203,11 @@ let nodes = [
     "Twitter Followers": 144709,
     "Sum of Edge Weights": 1059,
     "EngName": "S.L. Kanthan",
-    "Leiden": 2,
-    "x": 0.64169824,
-    "y": 112.87312
+    "Leiden": 4,
+    "Default-X": 0.64169824,
+    "Default-Y": 112.87312,
+    "x": 23.765444,
+    "y": 89.921875
   },
   {
     "ID": "@kharaguchi",
@@ -236,8 +218,10 @@ let nodes = [
     "Sum of Edge Weights": 1819,
     "EngName": "Kazuhiro Haraguchi",
     "Leiden": 7,
-    "x": 54.528473,
-    "y": 75.19174
+    "Default-X": 54.528473,
+    "Default-Y": 75.19174,
+    "x": 66.879166,
+    "y": 8.438997
   },
   {
     "ID": "@kimdotcom",
@@ -247,9 +231,11 @@ let nodes = [
     "Twitter Followers": 1622341,
     "Sum of Edge Weights": 392,
     "EngName": "Kim Dotcom",
-    "Leiden": 1,
-    "x": 44.984665,
-    "y": 161.76901
+    "Leiden": 4,
+    "Default-X": 44.984665,
+    "Default-Y": 161.76901,
+    "x": 122.7395,
+    "y": 96.85692
   },
   {
     "ID": "@kumi_japonesa",
@@ -260,8 +246,10 @@ let nodes = [
     "Sum of Edge Weights": 2326,
     "EngName": "Kumi",
     "Leiden": 2,
-    "x": 123.72709,
-    "y": 41.009617
+    "Default-X": 123.72709,
+    "Default-Y": 41.009617,
+    "x": 98.969696,
+    "y": -48.485497
   },
   {
     "ID": "@mari21sofi",
@@ -272,8 +260,10 @@ let nodes = [
     "Sum of Edge Weights": 2230,
     "EngName": "MK",
     "Leiden": 1,
-    "x": 100.08859,
-    "y": 71.88716
+    "Default-X": 100.08859,
+    "Default-Y": 71.88716,
+    "x": 110.63652,
+    "y": 7.8804073
   },
   {
     "ID": "@megatron_ron",
@@ -283,9 +273,11 @@ let nodes = [
     "Twitter Followers": 337642,
     "Sum of Edge Weights": 463,
     "EngName": "Megatron",
-    "Leiden": 2,
-    "x": 1.6991003,
-    "y": 150.05522
+    "Leiden": 1,
+    "Default-X": 1.6991003,
+    "Default-Y": 150.05522,
+    "x": 77.87581,
+    "y": 124.56522
   },
   {
     "ID": "@monmi0614",
@@ -296,8 +288,10 @@ let nodes = [
     "Sum of Edge Weights": 871,
     "EngName": "Monmi",
     "Leiden": 1,
-    "x": 130.4745,
-    "y": 65.74397
+    "Default-X": 130.4745,
+    "Default-Y": 65.74397,
+    "x": 140.04312,
+    "y": 11.1583
   },
   {
     "ID": "@nhk_news",
@@ -307,9 +301,11 @@ let nodes = [
     "Twitter Followers": 3646277,
     "Sum of Edge Weights": 416,
     "EngName": "NHK News",
-    "Leiden": 1,
-    "x": 104.29348,
-    "y": -28.900938
+    "Leiden": 3,
+    "Default-X": 104.29348,
+    "Default-Y": -28.900938,
+    "x": 87.84372,
+    "y": -94.53317
   },
   {
     "ID": "@nxt888",
@@ -320,8 +316,10 @@ let nodes = [
     "Sum of Edge Weights": 560,
     "EngName": "Sony Thang",
     "Leiden": 2,
-    "x": -69.97095,
-    "y": 127.675125
+    "Default-X": -69.97095,
+    "Default-Y": 127.675125,
+    "x": 2.7942023,
+    "y": 135.27081
   },
   {
     "ID": "@parstodayj",
@@ -331,9 +329,11 @@ let nodes = [
     "Twitter Followers": 26755,
     "Sum of Edge Weights": 2339,
     "EngName": "Pars Today Japan",
-    "Leiden": 2,
-    "x": 171.38878,
-    "y": 62.612354
+    "Leiden": 3,
+    "Default-X": 171.38878,
+    "Default-Y": 62.612354,
+    "x": 117.11933,
+    "y": -101.64315
   },
   {
     "ID": "@qudsnen",
@@ -343,9 +343,11 @@ let nodes = [
     "Twitter Followers": 534521,
     "Sum of Edge Weights": 2703,
     "EngName": "Quds News Network",
-    "Leiden": 2,
-    "x": -29.19631,
-    "y": 136.60522
+    "Leiden": 3,
+    "Default-X": -29.19631,
+    "Default-Y": 136.60522,
+    "x": -10.387146,
+    "y": 73.08334
   },
   {
     "ID": "@rusembassyj",
@@ -356,8 +358,10 @@ let nodes = [
     "Sum of Edge Weights": 593,
     "EngName": "Russian Embassy in Japan",
     "Leiden": 1,
-    "x": 178.71837,
-    "y": -4.206747
+    "Default-X": 178.71837,
+    "Default-Y": -4.206747,
+    "x": 174.24265,
+    "y": -74.3559
   },
   {
     "ID": "@sakemotomasao",
@@ -367,9 +371,11 @@ let nodes = [
     "Twitter Followers": 16003,
     "Sum of Edge Weights": 1847,
     "EngName": "Masao Sakamoto",
-    "Leiden": 1,
-    "x": 64.455,
-    "y": 13.350493
+    "Leiden": 3,
+    "Default-X": 64.455,
+    "Default-Y": 13.350493,
+    "x": 75.25233,
+    "y": -7.378806
   },
   {
     "ID": "@sawayama0410",
@@ -380,8 +386,10 @@ let nodes = [
     "Sum of Edge Weights": 2482,
     "EngName": "Shintaro Sawayama",
     "Leiden": 1,
-    "x": 73.402466,
-    "y": 94.41669
+    "Default-X": 73.402466,
+    "Default-Y": 94.41669,
+    "x": 103.65274,
+    "y": -24.821447
   },
   {
     "ID": "@sicknxi7ewcklrl",
@@ -392,8 +400,10 @@ let nodes = [
     "Sum of Edge Weights": 2682,
     "EngName": "Shoichi Yokoyama",
     "Leiden": 2,
-    "x": 37.060234,
-    "y": 6.673722
+    "Default-X": 37.060234,
+    "Default-Y": 6.673722,
+    "x": 18.999405,
+    "y": -4.7907352
   },
   {
     "ID": "@sohbunshu",
@@ -404,20 +414,10 @@ let nodes = [
     "Sum of Edge Weights": 5450,
     "EngName": "Bunshu So",
     "Leiden": 2,
-    "x": 17.603537,
-    "y": 61.989594
-  },
-  {
-    "ID": "@spokespersonchn",
-    "Centrality, Total-Degree": 2202,
-    "OutDeg": 2201,
-    "Twitter Name": "Hua Chunying 华春莹",
-    "Twitter Followers": 2588035,
-    "Sum of Edge Weights": 2201,
-    "EngName": "Hua Chunying",
-    "Leiden": 6,
-    "x": -67.14438,
-    "y": -68.775536
+    "Default-X": 17.603537,
+    "Default-Y": 61.989594,
+    "x": 15.677276,
+    "y": 17.567738
   },
   {
     "ID": "@sputnik_jp",
@@ -428,8 +428,10 @@ let nodes = [
     "Sum of Edge Weights": 5066,
     "EngName": "Sputnik Japan",
     "Leiden": 1,
-    "x": 127.13674,
-    "y": -6.6622725
+    "Default-X": 127.13674,
+    "Default-Y": -6.6622725,
+    "x": 132.62677,
+    "y": -73.16728
   },
   {
     "ID": "@steco_shimizu",
@@ -440,8 +442,10 @@ let nodes = [
     "Sum of Edge Weights": 3284,
     "EngName": "Yasumasa Shimizu",
     "Leiden": 2,
-    "x": 38.01166,
-    "y": 91.561195
+    "Default-X": 38.01166,
+    "Default-Y": 91.561195,
+    "x": 79.404144,
+    "y": 50.94002
   },
   {
     "ID": "@tamama0306",
@@ -452,20 +456,10 @@ let nodes = [
     "Sum of Edge Weights": 2394,
     "EngName": "Tamahoi",
     "Leiden": 1,
-    "x": 132.80057,
-    "y": 128.92915
-  },
-  {
-    "ID": "@teiichiaoyama",
-    "Centrality, Total-Degree": 388,
-    "OutDeg": 388,
-    "Twitter Name": "青山貞一",
-    "Twitter Followers": 11130,
-    "Sum of Edge Weights": 388,
-    "EngName": "Teiichi Aoyama",
-    "Leiden": 2,
-    "x": 190.8531,
-    "y": 27.681486
+    "Default-X": 132.80057,
+    "Default-Y": 128.92915,
+    "x": 146.24652,
+    "y": 47.174957
   },
   {
     "ID": "@tobimono2",
@@ -476,8 +470,10 @@ let nodes = [
     "Sum of Edge Weights": 2282,
     "EngName": "Tobimono2",
     "Leiden": 1,
-    "x": 146.88263,
-    "y": 93.04766
+    "Default-X": 146.88263,
+    "Default-Y": 93.04766,
+    "x": 171.82092,
+    "y": 35.96267
   },
   {
     "ID": "@tomokoshimoyama",
@@ -488,8 +484,10 @@ let nodes = [
     "Sum of Edge Weights": 350,
     "EngName": "Tomoko Shimoyama",
     "Leiden": 1,
-    "x": 72.90089,
-    "y": 172.08762
+    "Default-X": 72.90089,
+    "Default-Y": 172.08762,
+    "x": 71.089516,
+    "y": 99.823944
   },
   {
     "ID": "@trappedsoldier",
@@ -499,9 +497,11 @@ let nodes = [
     "Twitter Followers": 9772,
     "Sum of Edge Weights": 3487,
     "EngName": "Mko",
-    "Leiden": 2,
-    "x": 9.416177,
-    "y": 12.656589
+    "Leiden": 3,
+    "Default-X": 9.416177,
+    "Default-Y": 12.656589,
+    "x": 24.979637,
+    "y": -25.210375
   },
   {
     "ID": "@wangon2010",
@@ -511,9 +511,11 @@ let nodes = [
     "Twitter Followers": 15506,
     "Sum of Edge Weights": 2449,
     "EngName": "Garyu Tsushin",
-    "Leiden": 1,
-    "x": 18.36607,
-    "y": 25.883234
+    "Leiden": 3,
+    "Default-X": 18.36607,
+    "Default-Y": 25.883234,
+    "x": 46.89117,
+    "y": 7.058022
   },
   {
     "ID": "@xuejianosaka",
@@ -523,9 +525,11 @@ let nodes = [
     "Twitter Followers": 78779,
     "Sum of Edge Weights": 8907,
     "EngName": "Xue Jian",
-    "Leiden": 3,
-    "x": 6.568448,
-    "y": -7.9514318
+    "Leiden": 2,
+    "Default-X": 6.568448,
+    "Default-Y": -7.9514318,
+    "x": 34.365524,
+    "y": 26.176025
   },
   {
     "ID": "@z58633894",
@@ -536,8 +540,10 @@ let nodes = [
     "Sum of Edge Weights": 1396,
     "EngName": "Vladimir Z",
     "Leiden": 1,
-    "x": 124.944756,
-    "y": 83.8806
+    "Default-X": 124.944756,
+    "Default-Y": 83.8806,
+    "x": 127.76271,
+    "y": 28.345963
   },
   {
     "ID": "@zhang_heqing",
@@ -547,9 +553,11 @@ let nodes = [
     "Twitter Followers": 392989,
     "Sum of Edge Weights": 1334,
     "EngName": "Zhang Heqing",
-    "Leiden": 6,
-    "x": -65.66063,
-    "y": -6.9776335
+    "Leiden": 4,
+    "Default-X": -65.66063,
+    "Default-Y": -6.9776335,
+    "x": -38.470234,
+    "y": 94.01637
   },
   {
     "ID": "@elonmusk",
@@ -559,9 +567,11 @@ let nodes = [
     "Twitter Followers": 189759776,
     "Sum of Edge Weights": 525,
     "EngName": "Elon Musk",
-    "Leiden": 6,
-    "x": -21.338556,
-    "y": 100.3166
+    "Leiden": 4,
+    "Default-X": -21.338556,
+    "Default-Y": 100.3166,
+    "x": 124.41775,
+    "y": 126.08586
   },
   {
     "ID": "@naoyafujiwara",
@@ -572,8 +582,10 @@ let nodes = [
     "Sum of Edge Weights": 2318,
     "EngName": "Naoya Fujiwara",
     "Leiden": 7,
-    "x": 104.7386,
-    "y": 161.95676
+    "Default-X": 104.7386,
+    "Default-Y": 161.95676,
+    "x": 151.98285,
+    "y": 76.47219
   },
   {
     "ID": "@poppincoco",
@@ -584,8 +596,10 @@ let nodes = [
     "Sum of Edge Weights": 335,
     "EngName": "Poppin Coco",
     "Leiden": 1,
-    "x": 88.14666,
-    "y": 48.36777
+    "Default-X": 88.14666,
+    "Default-Y": 48.36777,
+    "x": 92.80108,
+    "y": 26.864159
   },
   {
     "ID": "@shortshort_news",
@@ -596,8 +610,10 @@ let nodes = [
     "Sum of Edge Weights": 2271,
     "EngName": "ShortShort News",
     "Leiden": 1,
-    "x": 71.73967,
-    "y": 142.5137
+    "Default-X": 71.73967,
+    "Default-Y": 142.5137,
+    "x": 52.992397,
+    "y": 64.57441
   },
   {
     "ID": "@hatoyamayukio",
@@ -608,8 +624,10 @@ let nodes = [
     "Sum of Edge Weights": 212,
     "EngName": "Yukio Hatoyama",
     "Leiden": 2,
-    "x": 105.406975,
-    "y": -82.78491
+    "Default-X": 105.406975,
+    "Default-Y": -82.78491,
+    "x": -73.11514,
+    "y": -42.336018
   },
   {
     "ID": "@nankurunaisa_10",
@@ -619,9 +637,11 @@ let nodes = [
     "Twitter Followers": 2892,
     "Sum of Edge Weights": 2984,
     "EngName": "Nankurunaisa Association",
-    "Leiden": 4,
-    "x": -54.759415,
-    "y": 72.10883
+    "Leiden": 5,
+    "Default-X": -54.759415,
+    "Default-Y": 72.10883,
+    "x": -44.93003,
+    "y": 1.0808482
   },
   {
     "ID": "@ryukyushimpo",
@@ -631,9 +651,11 @@ let nodes = [
     "Twitter Followers": 114857,
     "Sum of Edge Weights": 1687,
     "EngName": "Ryukyu Shimpo",
-    "Leiden": 4,
-    "x": -116.76055,
-    "y": 57.70661
+    "Leiden": 5,
+    "Default-X": -116.76055,
+    "Default-Y": 57.70661,
+    "x": -69.71518,
+    "y": -119.86423
   },
   {
     "ID": "@theokinawatimes",
@@ -643,9 +665,11 @@ let nodes = [
     "Twitter Followers": 136861,
     "Sum of Edge Weights": 1337,
     "EngName": "Okinawa Times",
-    "Leiden": 4,
-    "x": -106.97236,
-    "y": 3.0796354
+    "Leiden": 5,
+    "Default-X": -106.97236,
+    "Default-Y": 3.0796354,
+    "x": -116.40002,
+    "y": -32.859383
   },
   {
     "ID": "@tomoaaahiro",
@@ -655,33 +679,11 @@ let nodes = [
     "Twitter Followers": 4981,
     "Sum of Edge Weights": 1234,
     "EngName": "Tomo",
-    "Leiden": 4,
-    "x": -35.746487,
-    "y": 23.293404
-  },
-  {
-    "ID": "@matusima3455",
-    "Centrality, Total-Degree": 106,
-    "OutDeg": 45,
-    "Twitter Name": "松島泰勝",
-    "Twitter Followers": 1529,
-    "Sum of Edge Weights": 45,
-    "EngName": "Yasukatsu Matsushima",
-    "Leiden": 4,
-    "x": -160.54642,
-    "y": -11.168307
-  },
-  {
-    "ID": "@revolution1749",
-    "Centrality, Total-Degree": 155,
-    "OutDeg": 67,
-    "Twitter Name": "深蓝海（日文名「古池一弘」）",
-    "Twitter Followers": 747,
-    "Sum of Edge Weights": 67,
-    "EngName": "Kazuhiro Furuike",
-    "Leiden": 2,
-    "x": 41.965145,
-    "y": -135.76009
+    "Leiden": 5,
+    "Default-X": -35.746487,
+    "Default-Y": 23.293404,
+    "x": 4.582404,
+    "y": -74.9401
   },
   {
     "ID": "@camomille0206",
@@ -691,104 +693,10 @@ let nodes = [
     "Twitter Followers": 12406,
     "Sum of Edge Weights": 2133,
     "EngName": "Hemmi Tatsuo",
-    "Leiden": 5,
-    "x": -28.224548,
-    "y": 60.006977
-  },
-  {
-    "ID": "@donglingyu58022",
-    "Centrality, Total-Degree": 1926,
-    "OutDeg": 1858,
-    "Twitter Name": "冬铃月(互fo 100%秒关)",
-    "Twitter Followers": 3878,
-    "Sum of Edge Weights": 1858,
-    "EngName": "Donglingyue",
-    "Leiden": 3,
-    "x": 21.814428,
-    "y": -182.27954
-  },
-  {
-    "ID": "@robkajiwara",
-    "Centrality, Total-Degree": 188,
-    "OutDeg": 42,
-    "Twitter Name": "Robert Kajiwara ｜比嘉孝昌｜ 魏孝昌",
-    "Twitter Followers": 30094,
-    "Sum of Edge Weights": 42,
-    "EngName": "Robert Kajiwara",
-    "Leiden": 4,
-    "x": -175.12355,
-    "y": 40.76266
-  },
-  {
-    "ID": "@zhangji77560613",
-    "Centrality, Total-Degree": 4568,
-    "OutDeg": 3497,
-    "Twitter Name": "清风竹（互fo100%）",
-    "Twitter Followers": 25876,
-    "Sum of Edge Weights": 3497,
-    "EngName": "Qingfengzhu",
-    "Leiden": 3,
-    "x": -49.802135,
-    "y": -142.33179
-  },
-  {
-    "ID": "@fannu6159985714",
-    "Centrality, Total-Degree": 3268,
-    "OutDeg": 2850,
-    "Twitter Name": "燁赫",
-    "Twitter Followers": 4674,
-    "Sum of Edge Weights": 2850,
-    "EngName": "Yehe",
-    "Leiden": 3,
-    "x": -94.880775,
-    "y": -174.049
-  },
-  {
-    "ID": "@haoney554004",
-    "Centrality, Total-Degree": 1468,
-    "OutDeg": 1467,
-    "Twitter Name": "haoney（互fo互赞）",
-    "Twitter Followers": 5789,
-    "Sum of Edge Weights": 1467,
-    "EngName": "Haoney",
-    "Leiden": 3,
-    "x": -160.602,
-    "y": -263.01224
-  },
-  {
-    "ID": "@liguihong0625",
-    "Centrality, Total-Degree": 5046,
-    "OutDeg": 4986,
-    "Twitter Name": "雲朵好甜",
-    "Twitter Followers": 15306,
-    "Sum of Edge Weights": 4986,
-    "EngName": "Yunduohaotian",
-    "Leiden": 3,
-    "x": -89.68986,
-    "y": -126.34775
-  },
-  {
-    "ID": "@xiaxiayiyi",
-    "Centrality, Total-Degree": 11372,
-    "OutDeg": 9509,
-    "Twitter Name": "夏怡（互fo 100%）",
-    "Twitter Followers": 7114,
-    "Sum of Edge Weights": 9509,
-    "EngName": "Xiayi",
-    "Leiden": 3,
-    "x": -110.92922,
-    "y": -74.138336
-  },
-  {
-    "ID": "@xiaofen20220508",
-    "Centrality, Total-Degree": 1949,
-    "OutDeg": 1513,
-    "Twitter Name": "小美",
-    "Twitter Followers": 10627,
-    "Sum of Edge Weights": 1513,
-    "EngName": "Xiaomei",
-    "Leiden": 3,
-    "x": -187.46623,
-    "y": -101.176765
+    "Leiden": 6,
+    "Default-X": -28.224548,
+    "Default-Y": 60.006977,
+    "x": -22.389305,
+    "y": -21.513876
   }
 ]

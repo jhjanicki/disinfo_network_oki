@@ -10,6 +10,15 @@ $(window).resize(function() {
         return;
     }
 });
+
+
+// Step 1: Create a Set of node IDs for quick lookup
+const nodeIDs = new Set(nodes.map(node => node.ID));
+
+// Step 2: Filter the links
+links = links.filter(link => nodeIDs.has(link.source) && nodeIDs.has(link.target));
+
+
 let width = windowWidth;
 let height = windowHeight;
 
