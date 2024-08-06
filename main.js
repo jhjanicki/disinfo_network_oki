@@ -17,8 +17,7 @@ let dimension = Math.min(width,height)
 
 let tooltip = floatingTooltip('gates_tooltip', 240, 10);
 
-let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.2,25]);
-let strokeOpacityScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.7,1]);
+let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.7,25]);
 
 let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range([5,40]);
 
@@ -61,7 +60,7 @@ const simulation = d3.forceSimulation(nodes)
     // .force("x", d3.forceX(d=>xScale(d.x)))
     // .force("y", d3.forceY(d=>yScale(d.y)))
     .force("link", d3.forceLink(links).id(d => d.ID))
-    .force("charge", d3.forceManyBody().strength(-1000).theta(0.1))
+    .force("charge", d3.forceManyBody().strength(-800).theta(0.1))
 
 
 
@@ -84,38 +83,8 @@ const link = svg.append("g")
     .attr("class","links")
     .attr("stroke-linecap", "round")
     .attr("stroke-linejoin", "round")
-    .attr("stroke",d=> {
-        let source = nodes.filter(node=>{
-            return node.ID===d.source.ID
-        });
-
-        let target = nodes.filter(node=>{
-            return node.ID===d.target.ID
-        });
-
-        const sourceColor = colorScale(source[0].Leiden);
-        const targetColor = colorScale(target[0].Leiden);
-        const gradientID = "gradient-" + d.source.ID + "-" + d.target.ID;
-        const gradient = svg.append("linearGradient")
-            .attr("id", gradientID)
-            .attr("gradientUnits", "userSpaceOnUse")
-            .attr("x1", d.source.x)
-            .attr("y1", d.source.y)
-            .attr("x2", d.target.x)
-            .attr("y2", d.target.y);
-        // Add gradient stops
-        gradient.append("stop")
-            .attr("offset", "0%")
-            .attr("stop-color", targetColor);
-        gradient.append("stop")
-            .attr("offset", "100%")
-            .attr("stop-color", sourceColor);
-        // return "url(#" + gradientID + ")";
-           return colorScale(target[0].Leiden)
-    })
-
+    .attr("stroke","#bdbdbd")
     .attr("stroke-width", d=>strokeWidthScale(d.weight))
-    .style("opacity", d=> strokeOpacityScale(d.weight))
 
 
 // link.source = node.key then get the node.attributes.color
@@ -124,7 +93,7 @@ const node = svg.append("g")
     .selectAll("g")
     .data(nodes)
     .join("g")
-    .attr("fill", d => colorScale(d.Leiden))
+    .attr("fill", d => d.cat==="meta"?"#636363":colorScale(d.Leiden))
     .attr("stroke","black")
     .attr("stroke-width",0.5)
     .call(drag(simulation));
@@ -154,12 +123,12 @@ node.append("circle")
             d3.select(`#id_text2_${target}`).style("opacity",1);
             d3.select(`#id_texthandle_${target}`).style("opacity",1);
             d3.select(`#id_texthandle2_${target}`).style("opacity",1);
-            d3.select(`#id_${link.ID}`).style("opacity",strokeOpacityScale(link.weight));
+            d3.select(`#id_${link.ID}`).style("opacity",1);
         })
     })
     .on("mouseout",(e,d)=>{
         links.forEach((link) =>{
-            d3.select(`#id_${link.ID}`).style("opacity",strokeOpacityScale(link.weight));
+            d3.select(`#id_${link.ID}`).style("opacity",1);
         })
         d3.selectAll(".circles").style("opacity",1);
         d3.selectAll(".texts").style("opacity",1);
@@ -175,7 +144,7 @@ node.append("text")
     .attr("x", 8)
     .attr("y", "1em")
     .attr("fill", "black")
-    .text(d => d.EngName)
+    .text(d => d.cat==="meta"?"":d.EngName)
     .clone(true).lower()
     .attr("fill", "none")
     .attr("stroke", "white")
@@ -191,7 +160,7 @@ node.append("text")
     .attr("fill", "black")
     .style("font-weight", 400)
     .style("font-size", 11)
-    .text(d => d.ID)
+    .text(d => d.cat==="meta"?"":d.ID)
     .clone(true).lower()
     .attr("fill", "none")
     .attr("stroke", "white")
@@ -202,7 +171,7 @@ node.append("text")
 
 simulation.on("tick", () => {
     link.attr("d", linkArc);
-    node.attr("transform", d => `translate(${d.x},${d.y})`); 
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
 })
 
 function linkArc(d) {
@@ -212,4 +181,3 @@ function linkArc(d) {
       A${r},${r} 0 0,1 ${d.target.x},${d.target.y}
     `;
 }
-
