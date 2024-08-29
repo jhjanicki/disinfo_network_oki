@@ -13,14 +13,20 @@ $(window).resize(function() {
 let width = windowWidth;
 let height = windowHeight;
 
+let isSmallScreen = false;
+
+if (windowWidth <= 850) {
+  isSmallScreen = true;
+}
+
 let dimension = Math.min(width,height)
 
 let tooltip = floatingTooltip('gates_tooltip', 240, 10);
 
-let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.2,25]);
+let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range(isSmallScreen?[0.2,15]:[0.2,25]);
 let strokeOpacityScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.7,1]);
 
-let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range([5,40]);
+let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range(isSmallScreen?[3,20]:[5,40]);
 
 const leidenCats = Array.from({ length: 7 }, (_, i) => i + 1);
 
@@ -61,7 +67,7 @@ const simulation = d3.forceSimulation(nodes)
     // .force("x", d3.forceX(d=>xScale(d.x)))
     // .force("y", d3.forceY(d=>yScale(d.y)))
     .force("link", d3.forceLink(links).id(d => d.ID))
-    .force("charge", d3.forceManyBody().strength(-1000).theta(0.1))
+    .force("charge", d3.forceManyBody().strength(isSmallScreen?-450:-950).theta(0.1))
 
 
 
@@ -71,7 +77,7 @@ const svg = d3.select("#chart").append("svg")
     .attr("preserveAspectRatio", "xMidYMid meet")
     .style("font-size", "13")
     .append("g")
-    // .attr("transform",`translate(-100,0)`)
+    .attr("transform",isSmallScreen?`translate(-50,20)`:`translate(0,20)`)
 
 
 
@@ -202,7 +208,7 @@ node.append("text")
 
 simulation.on("tick", () => {
     link.attr("d", linkArc);
-    node.attr("transform", d => `translate(${d.x},${d.y})`); 
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
 })
 
 function linkArc(d) {
@@ -212,4 +218,3 @@ function linkArc(d) {
       A${r},${r} 0 0,1 ${d.target.x},${d.target.y}
     `;
 }
-

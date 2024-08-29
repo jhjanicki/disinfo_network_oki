@@ -22,6 +22,36 @@
          margin-right: auto;
       }
 
+      #legendWrapper{
+        position: absolute;
+        top:10px;
+        left:10px;
+      }
+
+      .legend {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .legend-color {
+        width: 20px;
+        height: 20px;
+      }
+
+      .legend-text{
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+
       text {
          paint-order: stroke;
          stroke: white;
@@ -78,11 +108,49 @@
       .text {
          font-weight: 300;
       }
+
+      @media only screen and (max-width:850px) {
+        .legend-text{
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
    </style>
 </head>
 
 <body>
-
+   <div id="legendWrapper">
+     <div class="legend">
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #ff725c;"></div>
+    <div class="legend-text">The Xue Jian community</div>
+  </div>
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #4269d0;"></div>
+    <div class="legend-text">The pro-Russia community</div>
+  </div>
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #efb118;"></div>
+    <div class="legend-text">The transitional community</div>
+  </div>
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #6cc5b0;"></div>
+    <div class="legend-text">The Okinawa community</div>
+  </div>
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #9b66ea;"></div>
+    <div class="legend-text">The Kazuhiro Haraguchi and Naoya Fujiawara pair</div>
+  </div>
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #5ca75b;"></div>
+    <div class="legend-text">The Holmes community</div>
+  </div>
+  <div class="legend-item">
+    <div class="legend-color" style="background-color: #ef90b6;"></div>
+    <div class="legend-text">Others</div>
+  </div>
+</div>
+   </div>
    <div id="chart"></div>
 
 
