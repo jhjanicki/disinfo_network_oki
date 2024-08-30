@@ -3,8 +3,8 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Okinawa disinfo network</title>
-   <meta name="description" content="Oscars 2024 nominees network">
+   <title>Disinfo network: Haraguchi</title>
+   <meta name="description" content="Disinfo network: Haraguchi">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,53 @@
          width: 90vw;
          margin-left: auto;
          margin-right: auto;
+      }
+
+      #legendWrapper{
+        position: absolute;
+        top:10px;
+        left:10px;
+      }
+
+      .legend {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .legend-color {
+        width: 20px;
+        height: 20px;
+      }
+
+      .legend-text{
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .hover-container {
+          margin-top:20px;
+          display: flex;
+          align-items: center;
+          justify-content: left; /* Aligns content to the left */
+      }
+
+      .hover-img {
+          width: 40px; /* Adjust size as needed */
+          height: 40px; /* Maintain aspect ratio by only specifying one dimension if necessary */
+          margin-right: 5px; /* Space between image and text */
+      }
+
+      .hover-text {
+          font-size: 16px;
+          font-family: Arial, sans-serif;
       }
 
       text {
@@ -78,11 +125,72 @@
       .text {
          font-weight: 300;
       }
+      @media only screen and (max-width:850px) {
+        .legend-text, .hover-text{
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+
+      @media only screen and (max-width:650px) {
+        .hover-container{
+          display:none;
+        }
+        .legend {
+          gap: 5px;
+        }
+
+
+        .legend-item {
+          gap: 5px;
+        }
+
+        .legend-color {
+          width: 15px;
+          height: 15px;
+        }
+      }
    </style>
 </head>
 
 <body>
 
+      <div id="legendWrapper">
+        <div class="legend">
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #ff725c;"></div>
+            <div class="legend-text">The Xue Jian community</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #4269d0;"></div>
+            <div class="legend-text">The pro-Russia community</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #efb118;"></div>
+            <div class="legend-text">The transitional community</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #6cc5b0;"></div>
+            <div class="legend-text">The Okinawa community</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #9b66ea;"></div>
+            <div class="legend-text">The Kazuhiro Haraguchi and Naoya Fujiawara pair</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #5ca75b;"></div>
+            <div class="legend-text">The Holmes community</div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #ef90b6;"></div>
+            <div class="legend-text">Others</div>
+          </div>
+        </div>
+        <div class="hover-container">
+            <img src="./img/tap.svg" class="hover-img">
+            <span class="hover-text">Hover over nodes</span>
+        </div>
+    </div>
    <div id="chart"></div>
 
 
