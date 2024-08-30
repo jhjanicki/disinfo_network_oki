@@ -13,13 +13,19 @@ $(window).resize(function() {
 let width = windowWidth;
 let height = windowHeight;
 
+let isSmallScreen = false;
+
+if (windowWidth <= 850) {
+  isSmallScreen = true;
+}
+
 let dimension = Math.min(width,height)
 
 let tooltip = floatingTooltip('gates_tooltip', 240, 10);
 
-let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range([0.7,25]);
+let strokeWidthScale = d3.scaleLinear().domain(d3.extent(links,d=>d.weight)).range(isSmallScreen?[0.7,15]:[0.7,25]);
 
-let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range([5,40]);
+let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range(isSmallScreen?[5,20]:[5,40]);
 
 const leidenCats = Array.from({ length: 7 }, (_, i) => i + 1);
 
@@ -60,7 +66,7 @@ const simulation = d3.forceSimulation(nodes)
     // .force("x", d3.forceX(d=>xScale(d.x)))
     // .force("y", d3.forceY(d=>yScale(d.y)))
     .force("link", d3.forceLink(links).id(d => d.ID))
-    .force("charge", d3.forceManyBody().strength(-800).theta(0.1))
+    .force("charge", d3.forceManyBody().strength(isSmallScreen?-350:-800).theta(0.1))
 
 
 
@@ -80,7 +86,7 @@ const link = svg.append("g")
     .data(links)
     .join("path")
     .attr("id",d=>`id_${d.ID}`)
-    .attr("class","links")
+    .attr("class",d=>`links leiden${d.Leiden}`)
     .attr("stroke-linecap", "round")
     .attr("stroke-linejoin", "round")
     .attr("stroke","#bdbdbd")
@@ -100,31 +106,36 @@ const node = svg.append("g")
 
 
 node.append("circle")
-    .attr("class","circles")
+    .attr("class",d=>`circles leiden${d.Leiden}${d.cat==="meta"?" meta":""}`)
     .attr("id",d=>`id_${d.ID.substring(1)}`)
     .attr("r", d=>nodeScale(d.OutDeg))
     .on("mouseover",(e,d)=>{
-        let linksToHighlight = links.filter(link=>link.source.ID === d.ID);
-        //only highlight the ones where the source is the key, not where the target is the key, so got rid of "|| link.target.key === d.key"
-        let source = d.ID.substring(1);
-        d3.selectAll(".links").style("opacity",0);
-        d3.selectAll(".circles").style("opacity",0);
-        d3.selectAll(".texts").style("opacity",0);
-        d3.selectAll(".texts_handle").style("opacity",0);
-        d3.select(`#id_${source}`).style("opacity",1);
-        d3.select(`#id_text_${source}`).style("opacity",1);
-        d3.select(`#id_text2_${source}`).style("opacity",1);
-        d3.select(`#id_texthandle_${source}`).style("opacity",1);
-        d3.select(`#id_texthandle2_${source}`).style("opacity",1);
-        linksToHighlight.forEach((link) =>{
-            let target = link.target.ID.substring(1);
-            d3.select(`#id_${target}`).style("opacity",1);
-            d3.select(`#id_text_${target}`).style("opacity",1);
-            d3.select(`#id_text2_${target}`).style("opacity",1);
-            d3.select(`#id_texthandle_${target}`).style("opacity",1);
-            d3.select(`#id_texthandle2_${target}`).style("opacity",1);
-            d3.select(`#id_${link.ID}`).style("opacity",1);
-        })
+        if(d.cat==="meta"){
+          d3.selectAll(".meta").style("cursor","pointer")
+          let linksToHighlight = links.filter(link=>link.source.ID === d.ID);
+          //only highlight the ones where the source is the key, not where the target is the key, so got rid of "|| link.target.key === d.key"
+          let source = d.ID.substring(1);
+          d3.selectAll(".links").style("opacity",0);
+          d3.selectAll(".circles").style("opacity",0);
+          d3.selectAll(".texts").style("opacity",0);
+          d3.selectAll(".texts_handle").style("opacity",0);
+          d3.select(`#id_${source}`).style("opacity",1);
+          d3.select(`#id_text_${source}`).style("opacity",1);
+          d3.select(`#id_text2_${source}`).style("opacity",1);
+          d3.select(`#id_texthandle_${source}`).style("opacity",1);
+          d3.select(`#id_texthandle2_${source}`).style("opacity",1);
+          linksToHighlight.forEach((link) =>{
+              let target = link.target.ID.substring(1);
+              d3.select(`#id_${target}`).style("opacity",1);
+              d3.select(`#id_text_${target}`).style("opacity",1);
+              d3.select(`#id_text2_${target}`).style("opacity",1);
+              d3.select(`#id_texthandle_${target}`).style("opacity",1);
+              d3.select(`#id_texthandle2_${target}`).style("opacity",1);
+              d3.select(`#id_${link.ID}`).style("opacity",1);
+          })
+          d3.selectAll(`.leiden${d.Leiden}`).style("opacity",1);
+          d3.selectAll(`.meta`).style("opacity",1);
+      }
     })
     .on("mouseout",(e,d)=>{
         links.forEach((link) =>{
@@ -137,14 +148,14 @@ node.append("circle")
 
 
 
-
 node.append("text")
-    .attr("class","texts")
+    .attr("class",d=>`texts${d.cat==="meta"?" meta":""} leiden${d.Leiden}`)
     .attr("id",d=>`id_text_${d.ID.substring(1)}`)
+    .style("font-size",d=>d.cat==="meta"?18:13)
     .attr("x", 8)
     .attr("y", "1em")
     .attr("fill", "black")
-    .text(d => d.cat==="meta"?"":d.EngName)
+    .text(d => d.EngName)
     .clone(true).lower()
     .attr("fill", "none")
     .attr("stroke", "white")
@@ -153,7 +164,7 @@ node.append("text")
 
 
 node.append("text")
-    .attr("class","texts_handle")
+    .attr("class",d=>`texts_handle leiden${d.Leiden}`)
     .attr("id",d=>`id_texthandle_${d.ID.substring(1)}`)
     .attr("x", 8)
     .attr("y", "2.2em")

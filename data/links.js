@@ -3,6 +3,7 @@ let links = [
       "source":"@4myeefhha6h1onf",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":1
    },
@@ -10,6 +11,7 @@ let links = [
       "source":"@2018_apc",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":2
    },
@@ -17,6 +19,7 @@ let links = [
       "source":"@8vyie27rhxz49od",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":3
    },
@@ -24,6 +27,7 @@ let links = [
       "source":"@8ywgrulkqnzjbun",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":4
    },
@@ -31,6 +35,7 @@ let links = [
       "source":"@ais_of_dragoon",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":5
    },
@@ -38,6 +43,7 @@ let links = [
       "source":"@caitoz",
       "target_original":3,
       "target":"id3",
+"Leiden":5,
       "weight":1,
       "ID":6
    },
@@ -45,6 +51,7 @@ let links = [
       "source":"@chnconsul_osaka",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":7
    },
@@ -52,6 +59,7 @@ let links = [
       "source":"@crijpn",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":8
    },
@@ -59,6 +67,7 @@ let links = [
       "source":"@d9bf0nrdyrl21ba",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":9
    },
@@ -66,6 +75,7 @@ let links = [
       "source":"@drloupis",
       "target_original":3,
       "target":"id3",
+"Leiden":5,
       "weight":1,
       "ID":10
    },
@@ -73,6 +83,7 @@ let links = [
       "source":"@guts_1997",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":11
    },
@@ -80,6 +91,7 @@ let links = [
       "source":"@himuro398",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":12
    },
@@ -87,6 +99,7 @@ let links = [
       "source":"@holms6",
       "target_original":3,
       "target":"id3",
+"Leiden":5,
       "weight":1,
       "ID":13
    },
@@ -94,6 +107,7 @@ let links = [
       "source":"@j_sato",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":14
    },
@@ -101,6 +115,7 @@ let links = [
       "source":"@jacksonhinklle",
       "target_original":5,
       "target":"id5",
+"Leiden":6,
       "weight":1,
       "ID":15
    },
@@ -108,6 +123,7 @@ let links = [
       "source":"@jucundioribus",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":16
    },
@@ -115,6 +131,7 @@ let links = [
       "source":"@jupiter_russia",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":17
    },
@@ -122,6 +139,7 @@ let links = [
       "source":"@kamazen4649",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":18
    },
@@ -129,6 +147,7 @@ let links = [
       "source":"@kanthan2030",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":19
    },
@@ -136,6 +155,7 @@ let links = [
       "source":"@kharaguchi",
       "target_original":6,
       "target":"id6",
+"Leiden":7,
       "weight":1,
       "ID":20
    },
@@ -143,6 +163,7 @@ let links = [
       "source":"@kimdotcom",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":21
    },
@@ -150,6 +171,7 @@ let links = [
       "source":"@kumi_japonesa",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":22
    },
@@ -157,6 +179,7 @@ let links = [
       "source":"@mari21sofi",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":23
    },
@@ -164,6 +187,7 @@ let links = [
       "source":"@megatron_ron",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":24
    },
@@ -171,6 +195,7 @@ let links = [
       "source":"@monmi0614",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":25
    },
@@ -178,6 +203,7 @@ let links = [
       "source":"@nhk_news",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":26
    },
@@ -185,6 +211,7 @@ let links = [
       "source":"@nxt888",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":27
    },
@@ -192,6 +219,7 @@ let links = [
       "source":"@parstodayj",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":28
    },
@@ -199,6 +227,7 @@ let links = [
       "source":"@qudsnen",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":29
    },
@@ -206,6 +235,7 @@ let links = [
       "source":"@rusembassyj",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":30
    },
@@ -213,6 +243,7 @@ let links = [
       "source":"@sakemotomasao",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":31
    },
@@ -220,6 +251,7 @@ let links = [
       "source":"@sawayama0410",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":32
    },
@@ -227,6 +259,7 @@ let links = [
       "source":"@sicknxi7ewcklrl",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":33
    },
@@ -234,6 +267,7 @@ let links = [
       "source":"@sohbunshu",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":34
    },
@@ -241,6 +275,7 @@ let links = [
       "source":"@spokespersonchn",
       "target_original":5,
       "target":"id5",
+"Leiden":6,
       "weight":1,
       "ID":35
    },
@@ -248,6 +283,7 @@ let links = [
       "source":"@sputnik_jp",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":36
    },
@@ -255,6 +291,7 @@ let links = [
       "source":"@steco_shimizu",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":37
    },
@@ -262,6 +299,7 @@ let links = [
       "source":"@tamama0306",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":38
    },
@@ -269,6 +307,7 @@ let links = [
       "source":"@teiichiaoyama",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":39
    },
@@ -276,6 +315,7 @@ let links = [
       "source":"@tobimono2",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":40
    },
@@ -283,6 +323,7 @@ let links = [
       "source":"@tomokoshimoyama",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":41
    },
@@ -290,6 +331,7 @@ let links = [
       "source":"@trappedsoldier",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":42
    },
@@ -297,6 +339,7 @@ let links = [
       "source":"@wangon2010",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":43
    },
@@ -304,6 +347,7 @@ let links = [
       "source":"@xuejianosaka",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":44
    },
@@ -311,6 +355,7 @@ let links = [
       "source":"@z58633894",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":45
    },
@@ -318,6 +363,7 @@ let links = [
       "source":"@zhang_heqing",
       "target_original":5,
       "target":"id5",
+"Leiden":6,
       "weight":1,
       "ID":46
    },
@@ -325,6 +371,7 @@ let links = [
       "source":"@elonmusk",
       "target_original":5,
       "target":"id5",
+"Leiden":6,
       "weight":1,
       "ID":47
    },
@@ -332,6 +379,7 @@ let links = [
       "source":"@naoyafujiwara",
       "target_original":6,
       "target":"id6",
+"Leiden":7,
       "weight":1,
       "ID":48
    },
@@ -339,6 +387,7 @@ let links = [
       "source":"@poppincoco",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":49
    },
@@ -346,6 +395,7 @@ let links = [
       "source":"@shortshort_news",
       "target_original":1,
       "target":"id1",
+"Leiden":1,
       "weight":1,
       "ID":50
    },
@@ -353,6 +403,7 @@ let links = [
       "source":"@hatoyamayukio",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":51
    },
@@ -360,6 +411,7 @@ let links = [
       "source":"@nankurunaisa_10",
       "target_original":7,
       "target":"id7",
+"Leiden":4,
       "weight":1,
       "ID":52
    },
@@ -367,6 +419,7 @@ let links = [
       "source":"@ryukyushimpo",
       "target_original":7,
       "target":"id7",
+"Leiden":4,
       "weight":1,
       "ID":53
    },
@@ -374,6 +427,7 @@ let links = [
       "source":"@theokinawatimes",
       "target_original":7,
       "target":"id7",
+"Leiden":4,
       "weight":1,
       "ID":54
    },
@@ -381,6 +435,7 @@ let links = [
       "source":"@tomoaaahiro",
       "target_original":7,
       "target":"id7",
+"Leiden":4,
       "weight":1,
       "ID":55
    },
@@ -388,6 +443,7 @@ let links = [
       "source":"@matusima3455",
       "target_original":7,
       "target":"id7",
+"Leiden":4,
       "weight":1,
       "ID":56
    },
@@ -395,6 +451,7 @@ let links = [
       "source":"@revolution1749",
       "target_original":2,
       "target":"id2",
+"Leiden":2,
       "weight":1,
       "ID":57
    },
@@ -402,6 +459,7 @@ let links = [
       "source":"@camomille0206",
       "target_original":3,
       "target":"id3",
+"Leiden":5,
       "weight":1,
       "ID":58
    },
@@ -409,6 +467,7 @@ let links = [
       "source":"@donglingyu58022",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":59
    },
@@ -416,6 +475,7 @@ let links = [
       "source":"@robkajiwara",
       "target_original":7,
       "target":"id7",
+"Leiden":4,
       "weight":1,
       "ID":60
    },
@@ -423,6 +483,7 @@ let links = [
       "source":"@zhangji77560613",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":61
    },
@@ -430,6 +491,7 @@ let links = [
       "source":"@fannu6159985714",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":62
    },
@@ -437,6 +499,7 @@ let links = [
       "source":"@haoney554004",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":63
    },
@@ -444,6 +507,7 @@ let links = [
       "source":"@liguihong0625",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":64
    },
@@ -451,6 +515,7 @@ let links = [
       "source":"@xiaxiayiyi",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":65
    },
@@ -458,6 +523,7 @@ let links = [
       "source":"@xiaofen20220508",
       "target_original":4,
       "target":"id4",
+"Leiden":3,
       "weight":1,
       "ID":66
    },
@@ -465,6 +531,7 @@ let links = [
       "source":"id6",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":2,
       "ID":67
    },
@@ -472,6 +539,7 @@ let links = [
       "source":"id6",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":13,
       "ID":68
    },
@@ -479,6 +547,7 @@ let links = [
       "source":"id6",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":30,
       "ID":69
    },
@@ -486,6 +555,7 @@ let links = [
       "source":"id6",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":3,
       "ID":70
    },
@@ -493,6 +563,7 @@ let links = [
       "source":"id6",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":2,
       "ID":71
    },
@@ -500,6 +571,7 @@ let links = [
       "source":"id6",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":3,
       "ID":72
    },
@@ -507,6 +579,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":16,
       "ID":73
    },
@@ -514,6 +587,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":152,
       "ID":74
    },
@@ -521,6 +595,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":143,
       "ID":75
    },
@@ -528,6 +603,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":21,
       "ID":76
    },
@@ -535,6 +611,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":19,
       "ID":77
    },
@@ -542,6 +619,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":33,
       "ID":78
    },
@@ -549,6 +627,7 @@ let links = [
       "source":"id2",
       "target_original":"",
       "target":"id5",
+"Leiden":6,
       "weight":4,
       "ID":79
    },
@@ -556,6 +635,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":22,
       "ID":80
    },
@@ -563,6 +643,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":180,
       "ID":81
    },
@@ -570,6 +651,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":268,
       "ID":82
    },
@@ -577,6 +659,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":17,
       "ID":83
    },
@@ -584,6 +667,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":24,
       "ID":84
    },
@@ -591,6 +675,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":30,
       "ID":85
    },
@@ -598,6 +683,7 @@ let links = [
       "source":"id1",
       "target_original":"",
       "target":"id5",
+"Leiden":6,
       "weight":1,
       "ID":86
    },
@@ -605,6 +691,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":2,
       "ID":87
    },
@@ -612,6 +699,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":28,
       "ID":88
    },
@@ -619,6 +707,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":5,
       "ID":89
    },
@@ -626,6 +715,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":15,
       "ID":90
    },
@@ -633,6 +723,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":3,
       "ID":91
    },
@@ -640,6 +731,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":7,
       "ID":92
    },
@@ -647,6 +739,7 @@ let links = [
       "source":"id7",
       "target_original":"",
       "target":"id5",
+"Leiden":6,
       "weight":1,
       "ID":93
    },
@@ -654,6 +747,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":3,
       "ID":94
    },
@@ -661,6 +755,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":33,
       "ID":95
    },
@@ -668,6 +763,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":26,
       "ID":96
    },
@@ -675,6 +771,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":3,
       "ID":97
    },
@@ -682,6 +779,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":25,
       "ID":98
    },
@@ -689,6 +787,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":6,
       "ID":99
    },
@@ -696,6 +795,7 @@ let links = [
       "source":"id4",
       "target_original":"",
       "target":"id5",
+"Leiden":6,
       "weight":6,
       "ID":100
    },
@@ -703,6 +803,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":3,
       "ID":101
    },
@@ -710,6 +811,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":32,
       "ID":102
    },
@@ -717,6 +819,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":30,
       "ID":103
    },
@@ -724,6 +827,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":6,
       "ID":104
    },
@@ -731,6 +835,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":3,
       "ID":105
    },
@@ -738,6 +843,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":8,
       "ID":106
    },
@@ -745,6 +851,7 @@ let links = [
       "source":"id3",
       "target_original":"",
       "target":"id5",
+"Leiden":6,
       "weight":2,
       "ID":107
    },
@@ -752,6 +859,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id6",
+"Leiden":7,
       "weight":5,
       "ID":108
    },
@@ -759,6 +867,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id2",
+"Leiden":2,
       "weight":37,
       "ID":109
    },
@@ -766,6 +875,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id1",
+"Leiden":1,
       "weight":40,
       "ID":110
    },
@@ -773,6 +883,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id7",
+"Leiden":4,
       "weight":3,
       "ID":111
    },
@@ -780,6 +891,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id4",
+"Leiden":3,
       "weight":19,
       "ID":112
    },
@@ -787,6 +899,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id3",
+"Leiden":5,
       "weight":8,
       "ID":113
    },
@@ -794,6 +907,7 @@ let links = [
       "source":"id5",
       "target_original":"",
       "target":"id5",
+"Leiden":6,
       "weight":5,
       "ID":114
    }
