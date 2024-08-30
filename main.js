@@ -22,19 +22,26 @@ links = links.filter(link => nodeIDs.has(link.source) && nodeIDs.has(link.target
 let width = windowWidth;
 let height = windowHeight;
 
+let isSmallScreen = false;
+
+if (windowWidth <= 850) {
+  isSmallScreen = true;
+}
+
+
 let dimension = Math.min(width,height)
 
 let tooltip = floatingTooltip('gates_tooltip', 240, 10);
 
-let strokeWidthScale = d3.scaleLinear().domain([1,8936]).range([0.2,25]);
+let strokeWidthScale = d3.scaleLinear().domain([1,8936]).range(isSmallScreen?[0.2,15]:[0.2,25])
 // keep the same width as the main network
 let strokeOpacityScale = d3.scaleLinear().domain(d3.extent([1,8936])).range([0.7,1]);
 
-let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range([5,40]);
+let nodeScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.OutDeg)).range(isSmallScreen?[5,20]:[5,40]);
 
 const leidenCats = Array.from({ length: 7 }, (_, i) => i + 1);
-
-let colorScale = d3.scaleOrdinal().domain(leidenCats).range(["#4269d0", "#efb118", "#ff725c", "#6cc5b0", "#5ca75b","#ef90b6","#9b66ea"]);
+                                                             //1,x,x,0,1,x,1
+let colorScale = d3.scaleOrdinal().domain(leidenCats).range(["#4269d0", "#ff725c","#efb118", "#ef90b6","#6cc5b0","#5ca75b","#9b66ea"]);
 let xScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.x)).range([0,width]);
 let yScale = d3.scaleLinear().domain(d3.extent(nodes,d=>d.y)).range([0,height]);
 
@@ -78,7 +85,7 @@ const simulation = d3.forceSimulation(nodes)
     // .force("x", d3.forceX(d=>xScale(d.x)))
     // .force("y", d3.forceY(d=>yScale(d.y)))
     .force("link", d3.forceLink(links).id(d => d.ID))
-    .force("charge", d3.forceManyBody().strength(-1000).theta(0.1))
+    .force("charge", d3.forceManyBody().strength(isSmallScreen?-350:-1000).theta(0.1))
 
 
 
@@ -88,7 +95,7 @@ const svg = d3.select("#chart").append("svg")
     .attr("preserveAspectRatio", "xMidYMid meet")
     .style("font-size", "13")
     .append("g")
-    // .attr("transform",`translate(-100,0)`)
+    .attr("transform",isSmallScreen?`translate(-40,0)`:"")
     svg.call(texture);
 
 const link = svg.append("g")
@@ -188,6 +195,7 @@ node.append("circle")
 node.append("text")
     .attr("class","texts")
     .attr("id",d=>`id_text_${d.ID.substring(1)}`)
+    .style("font-size",d=>d.EngName==="Kazuhiro Haraguchi"?18:13)
     .attr("x", 8)
     .attr("y", "1em")
     .attr("fill", "black")
@@ -203,7 +211,7 @@ node.append("text")
     .attr("class","texts_handle")
     .attr("id",d=>`id_texthandle_${d.ID.substring(1)}`)
     .attr("x", 8)
-    .attr("y", "2.2em")
+    .attr("y", d=>d.EngName==="Kazuhiro Haraguchi"?"2.6em":"2.2em")
     .attr("fill", "black")
     .style("font-weight", 400)
     .style("font-size", 11)
@@ -218,7 +226,7 @@ node.append("text")
 
 simulation.on("tick", () => {
     link.attr("d", linkArc);
-    node.attr("transform", d => `translate(${d.x},${d.y})`); 
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
 })
 
 function linkArc(d) {
@@ -228,4 +236,3 @@ function linkArc(d) {
       A${r},${r} 0 0,1 ${d.target.x},${d.target.y}
     `;
 }
-
